@@ -12,5 +12,8 @@
     "oocss",
     "inuitcss"
   ],
-  "license": "Apache"
+  "license": "Apache",
+  "dependencies": {
+    "inuit-responsive-settings": "~0.1.0"
+  }
 }
