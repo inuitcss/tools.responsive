@@ -14,6 +14,6 @@
   ],
   "license": "Apache",
   "dependencies": {
-    "inuit-responsive-settings": "~0.0.2"
+    "inuit-responsive-settings": "~0.1.0"
   }
 }
