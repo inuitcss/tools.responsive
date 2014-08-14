@@ -6,7 +6,7 @@
     "Harry Roberts <harry@csswizardry.com>"
   ],
   "description": "Responsive tooling for the inuitcss framework",
-  "main": "_settings.responsive.scss",
+  "main": "_tools.responsive.scss",
   "keywords": [
     "css",
     "oocss",
