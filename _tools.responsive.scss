@@ -6,6 +6,9 @@
 // globally. If they have been previously been defined, the following variable
 // will be overriden and will be set to `true`.
 $inuit-responsive-settings: false !default;
+// add in an option for no-mq support, for IE8 and lower stylesheet
+// you would need to define $no-mq-support: true in that stylesheet
+$no-mq-support: false !default;
 
 @if ($inuit-responsive-settings == false) {
     @warn "Oops! Have you included a responsive settings file?"
@@ -46,11 +49,18 @@ $inuit-responsive-settings: false !default;
 
             // ...tell the mixin that we’ve found it...
             $breakpoint-found: true;
+            
+            // ...check to see if mq support enabled...
+			@if $no-mq-support {
+                // ...and spit it out here (sans media-query) or...
+				@content;
 
-            // ...and spit it out here.
-            @media #{$condition} {
-                @content;
-            }
+			} @else {
+				// ... spit it out here (with media-query).
+				@media #{$condition} {
+					 @content;
+				}
+			}
 
         }
 
