@@ -42,6 +42,6 @@ $inuit-responsive-settings: false !default;
   }
 
   @else {
-    @warn "Oops! Breakpoint ‘#{$breakpoint-name}’ does not exist."
+    @warn "Oops! Breakpoint ‘#{$mq}’ does not exist."
   }
 }
